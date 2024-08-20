@@ -8,13 +8,9 @@ const coder = process.env.CODER as keyof typeof runner
 const testFunc = runner[coder]
 
 it('case 1', () => {
-  expect(testFunc([100, 4, 200, 1, 3, 2])).toBe(4)
+  expect(testFunc([0,1,0,3,12])).toEqual([1,3,12,0,0])
 })
 
 it('case 2', () => {
-  expect(testFunc([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])).toBe(9)
-})
-
-it('case 3', () => {
-  expect(testFunc([])).toBe(0)
+  expect(testFunc([0])).toEqual([0])
 })
