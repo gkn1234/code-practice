@@ -8,7 +8,7 @@ const coder = process.env.CODER as keyof typeof runner
 const testFunc = runner[coder]
 
 it('case 1', () => {
-  expect(testFunc([0,1,0,3,12])).toEqual([1,3,12,0,0])
+  expect(testFunc([0, 1, 0, 3, 12])).toEqual([1, 3, 12, 0, 0])
 })
 
 it('case 2', () => {
