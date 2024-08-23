@@ -1,4 +1,4 @@
-export function moveZeroes(nums: number[]): void {
+export function moveZeroes(nums: number[]): number[] {
   const length = nums.length
   let fast = 0
   let slow = 0
@@ -13,5 +13,6 @@ export function moveZeroes(nums: number[]): void {
     nums[slow] = 0
     slow++
   }
+  return nums
 };
 // 这就是双指针嘛，头好痒，要长脑子了
